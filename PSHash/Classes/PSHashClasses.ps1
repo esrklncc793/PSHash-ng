@@ -26,7 +26,7 @@ class PSHmacResult {
     [string] $HashLower
     [byte[]] $HashBytes
     [string] $InputType
-    [string] $KeyLength
+    [int]    $KeyLength
 
     [string] ToString()    { return $this.Hash }
     [string] ToBase64()    { return [System.Convert]::ToBase64String($this.HashBytes) }
